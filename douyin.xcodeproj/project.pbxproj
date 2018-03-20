@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2594890EF475AF0284E93C09 /* libPods-douyin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F163CC0882BF7B6E1640FD15 /* libPods-douyin.a */; };
 		FCB6C6772060CBD90024564C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C6762060CBD90024564C /* AppDelegate.m */; };
 		FCB6C67A2060CBD90024564C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C6792060CBD90024564C /* ViewController.m */; };
 		FCB6C67D2060CBD90024564C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB6C67B2060CBD90024564C /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E493D9F0C7D2850B7D157B4 /* Pods-douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyin/Pods-douyin.debug.xcconfig"; sourceTree = "<group>"; };
+		838B4F55E3769FFFCB8959D6 /* Pods-douyin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyin.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyin/Pods-douyin.release.xcconfig"; sourceTree = "<group>"; };
+		F163CC0882BF7B6E1640FD15 /* libPods-douyin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douyin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB6C6722060CBD90024564C /* douyin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB6C6752060CBD90024564C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCB6C6762060CBD90024564C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2594890EF475AF0284E93C09 /* libPods-douyin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FC5B1936D01199F6EDA7152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F163CC0882BF7B6E1640FD15 /* libPods-douyin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA08F4D5D979C729C3B4829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E493D9F0C7D2850B7D157B4 /* Pods-douyin.debug.xcconfig */,
+				838B4F55E3769FFFCB8959D6 /* Pods-douyin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FCB6C6692060CBD90024564C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				FCB6C68D2060CBD90024564C /* douyinTests */,
 				FCB6C6982060CBD90024564C /* douyinUITests */,
 				FCB6C6732060CBD90024564C /* Products */,
+				FAA08F4D5D979C729C3B4829 /* Pods */,
+				8FC5B1936D01199F6EDA7152 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCB6C69E2060CBD90024564C /* Build configuration list for PBXNativeTarget "douyin" */;
 			buildPhases = (
+				68FF0A68A530B731234EB76A /* [CP] Check Pods Manifest.lock */,
 				FCB6C66E2060CBD90024564C /* Sources */,
 				FCB6C66F2060CBD90024564C /* Frameworks */,
 				FCB6C6702060CBD90024564C /* Resources */,
+				61CFF8F7A6FD3ECC3EC4B6EA /* [CP] Embed Pods Frameworks */,
+				F37288EAE498504B38AE0D9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61CFF8F7A6FD3ECC3EC4B6EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyin/Pods-douyin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FF0A68A530B731234EB76A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douyin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F37288EAE498504B38AE0D9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyin/Pods-douyin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FCB6C66E2060CBD90024564C /* Sources */ = {
@@ -428,6 +506,7 @@
 		};
 		FCB6C69F2060CBD90024564C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E493D9F0C7D2850B7D157B4 /* Pods-douyin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +521,7 @@
 		};
 		FCB6C6A02060CBD90024564C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 838B4F55E3769FFFCB8959D6 /* Pods-douyin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
